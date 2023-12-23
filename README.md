@@ -39,3 +39,4 @@ If you want to use Mysql, make sure you have mysql server up and running.
 5. sweet alert for notification
 6. home page for displaying estates
 7. registeration page to supply or demand an estate
+8. upload image or viedo for the estate using file pond
