@@ -6,7 +6,7 @@ laravel 10 Real Estates website with MySQL, Bootstrap 5, livewire 3, and jquery.
 
 1.Clone the project
 
-https://github.com/Moyhe/Real_Estates.git
+    https://github.com/Moyhe/Real_Estates.git
 
 2.Navigate into project folder using terminal and run
 
