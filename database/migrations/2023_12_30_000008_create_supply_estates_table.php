@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('supply_estates', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('category_id');
+            $table->foreignId('order_type_id');
             $table->boolean('active');
             $table->string('title')->unique();
             $table->longText('description');

@@ -11,12 +11,11 @@ use Livewire\Attributes\Title;
 
 class StoreEstate extends Component
 {
-    #[Title('Store Estate')]
 
+    #[Title('Store Estate')]
     public function render()
     {
         $share = Share::page('https://www.opensuse.org/', 'real estate information', ['class' => 'text-white', 'target' => '_blank'])
-            ->telegram()
             ->whatsapp();
 
         return view('livewire.store-estate', compact('share'));

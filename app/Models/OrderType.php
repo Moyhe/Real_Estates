@@ -10,6 +10,17 @@ class OrderType extends Model
 {
     use HasFactory;
 
+
+    /**
+     * Get all of the estatesTypes for the OrderType
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function estatesTypes(): HasMany
+    {
+        return $this->hasMany(SupplyEstates::class);
+    }
+
     /**
      * Get all of the partnerEstates for the OrderType
      *

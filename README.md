@@ -2,7 +2,7 @@
 
 laravel 10 Real Estates website with MySQL, Bootstrap 5, livewire 3, and jquery.
 
-![My logo](public/images/2023-12-23_03-00.png)
+![My logo](public/images/real_estate.png)
 
 ## Installation
 

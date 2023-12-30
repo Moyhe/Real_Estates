@@ -11,7 +11,7 @@ class EstateDetail extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public $share)
+    public function __construct(public $share, public $estates)
     {
         //
     }

@@ -57,7 +57,7 @@ class SearchForm extends Form
         $this->validate();
 
         SearchEstate::create([
-            'user_id' => auth()->user() ? auth()->user()->id : $this->randomIds(),
+            'user_id' => auth()->user() ? auth()->user()->id : 1,
             'category_id' => $this->orderType,
             'orderType_id' => $this->estateType,
             'area_from' => $this->minArea,
@@ -68,10 +68,5 @@ class SearchForm extends Form
         ]);
 
         $this->reset();
-    }
-
-    private function randomIds(): float
-    {
-        return floor(rand(1, 9));
     }
 }

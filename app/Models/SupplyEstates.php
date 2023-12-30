@@ -11,6 +11,8 @@ class SupplyEstates extends Model
 {
     use HasFactory;
 
+    protected $with = ['orderType'];
+
     protected $casts = [
         'thumbnails' => 'array',
 
@@ -35,8 +37,8 @@ class SupplyEstates extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function category(): BelongsTo
+    public function orderType(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(OrderType::class, 'order_type_id');
     }
 }

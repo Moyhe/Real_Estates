@@ -12,15 +12,6 @@ class Category extends Model
     use HasFactory;
 
 
-    /**
-     * Get all of the estateTypes for the Category
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function estateTypes(): HasMany
-    {
-        return $this->hasMany(SupplyEstates::class);
-    }
 
     /**
      * Get all of the partnerEstates for the OrderType

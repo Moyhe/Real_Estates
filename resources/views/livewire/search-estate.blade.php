@@ -24,7 +24,6 @@
 
     </div>
 
-
      <div  class="form-group" style="margin-top: 4rem !important;" >
 
         <label for="estateType" class="form-label text-black">Estate Type</label>

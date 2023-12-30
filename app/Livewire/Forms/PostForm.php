@@ -57,7 +57,7 @@ class PostForm extends Form
         $this->validate();
 
         Estate::create([
-            'user_id' => auth()->user() ? auth()->user()->id : $this->randomIds(),
+            'user_id' => auth()->user() ? auth()->user()->id :1,
             'orderType_id' => $this->estate_type,
             'category_id' => $this->estate_type,
             'description' => $this->description,
@@ -72,8 +72,4 @@ class PostForm extends Form
         $this->reset();
     }
 
-    private function randomIds(): float
-    {
-        return floor(rand(1, 9));
-    }
 }

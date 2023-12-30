@@ -49,12 +49,12 @@ class SupplyEstatesResource extends Resource
                         Forms\Components\Select::make('user_id')
                             ->relationship('user', 'name')
                             ->required(),
-                        Forms\Components\Select::make('category_id')
-                            ->required()
-                            ->label('Estate Type')
+                        Forms\Components\Select::make('order_type_id')
+                            ->relationship('orderType', 'name')
+                            ->label('Order Type')
                             ->preload()
                             ->searchable()
-                            ->relationship('category', 'name'),
+                            ->required(),
                         Forms\Components\TextInput::make('number_of_rooms')
                             ->numeric()
                             ->minValue(0)

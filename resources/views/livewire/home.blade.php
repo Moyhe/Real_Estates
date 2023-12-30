@@ -135,7 +135,7 @@
     </section>
     <!-- ============================ Property Detail End ================================== -->
 
-    <x-estate-detail :$share  />
+    <x-estate-detail :$share :$estates  />
 
     <x-back-to-button />
 
