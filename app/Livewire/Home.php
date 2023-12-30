@@ -16,10 +16,7 @@ class Home extends Component
     {
 
         $estates = SupplyEstates::all();
-        $share = Share::page('https://www.opensuse.org/', 'real estate information', ['class' => 'text-white', 'target' => '_blank'])
 
-            ->whatsapp();
-
-        return view('livewire.home', compact('share', 'estates'));
+        return view('livewire.home', compact('estates'));
     }
 }

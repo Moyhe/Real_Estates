@@ -18,7 +18,7 @@
 
     <livewire:create-estate />
 
-    <x-estate-detail :$share  />
+    <x-estate-detail  :$estates  />
 
     <x-back-to-button />
 

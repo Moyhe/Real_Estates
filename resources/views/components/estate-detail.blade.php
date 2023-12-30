@@ -1,4 +1,4 @@
-@props(['share', 'estates'])
+@props(['estates'])
 <!-- ============================ Related Property ===================================== -->
          <section class="property">
 
@@ -96,7 +96,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-between">
-                                 <button class="btn  px-3 text-white " data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="background-color: #2c3e50; ">
+                                 <button class="btn  px-3 text-white " data-bs-toggle="modal" data-bs-target="#exampleModal{{$estate->id}}" type="button" style="background-color: #2c3e50; ">
                                      share
                                  </button>
 
@@ -122,7 +122,7 @@
                    @endforeach
 
                    </div>
-                   <x-modal :$share />
+                   <x-modal :$estates />
                </div>
            </div>
 
