@@ -9,6 +9,7 @@ use App\Policies\EstateMarketPolicy;
 use App\Policies\SupplyEstatesPolicy;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -38,12 +39,15 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot(UrlGenerator $url): void
     {
         Gate::before(function ($user, $ability) {
             return $user->hasRole('Admin') ? true : null;
         });
 
         Model::unguard();
+
+        if (app()->environment() == 'production')
+            $url->forceScheme('https');
     }
 }
