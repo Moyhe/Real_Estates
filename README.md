@@ -12,7 +12,7 @@ laravel 10 Real Estates website with MySQL, Bootstrap 5, livewire 3, and jquery.
 
 2.Navigate into project folder using terminal and run
 
-    composer install
+    composer install && npm install
 
 3.Copy .env.example into .env
 
